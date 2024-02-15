@@ -219,11 +219,8 @@ Description : DOM Elements.
 				});
 
 				// Task 3: Hide the section titled 'What is full-stack?'
-				let article = document.getElementsByTagName("article");
-
-				let full_stack = article[0].children[0];
-				
-				full_stack.style.visibility = "hidden";
+				let article = document.getElementsByTagName("article")[0];
+				article.textContent = "";
 				
 
 				// Task 4: Create a new <p> element and append it to the 'About Us' section
