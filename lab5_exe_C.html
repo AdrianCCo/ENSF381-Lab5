@@ -219,9 +219,12 @@ Description : DOM Elements.
 				});
 
 				// Task 3: Hide the section titled 'What is full-stack?'
-				let article = document.getElementsByTagName("article")[0];
-				console.log(article);
-				article.textContent = "";
+				let article = document.getElementsByTagName("article");
+
+				let full_stack = article[0].children[0];
+				
+				full_stack.style.visibility = "hidden";
+				
 
 				// Task 4: Create a new <p> element and append it to the 'About Us' section
 				let aboutUs = document.getElementsByClassName("container");
@@ -233,13 +236,13 @@ Description : DOM Elements.
 
 				// Task 5: Add placeholders to input elements based on their corresponding label IDs
 				let inputName = document.getElementById("name");
-				inputName.setAttribute('value', "Name");
+				inputName.placeholder = "Name";
 
 				let inputEmail = document.getElementById("email");
-				inputEmail.setAttribute('value', "Email");
+				inputEmail.placeholder = "Email";
 
 				let inputMessage = document.getElementsByTagName("textarea")[0];
-				inputMessage.textContent = "Message";
+				inputMessage.placeholder = "Message";
 				
 
 				// Task 6: Set the src attribute of the image
